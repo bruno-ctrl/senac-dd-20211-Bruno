@@ -10,9 +10,10 @@ public class PessoaVO {
 	String sexo;
 	String CPF;
 	int tipoPessoa;
+	int avaliacaoVacina;
 	
 		
-public PessoaVO(int idPessoa , String nome, LocalDate dataNascimento, String sexo, String CPF, int tipoPessoa) {
+public PessoaVO(int idPessoa , String nome, LocalDate dataNascimento, String sexo, String CPF, int tipoPessoa, int avaliacaoVacina) {
 		super();
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
@@ -20,6 +21,7 @@ public PessoaVO(int idPessoa , String nome, LocalDate dataNascimento, String sex
 		this.CPF = CPF;
 		this.tipoPessoa = tipoPessoa;
 		this.idPessoa = idPessoa;
+		this.avaliacaoVacina = avaliacaoVacina;
 	}
 
 public int getIdPessoa() {
@@ -69,6 +71,14 @@ public String getCPF() {
 }
 public void setCPF(String CPF) {
 	this.CPF = CPF;
+}
+
+public int getAvaliacaoVacina() {
+	return avaliacaoVacina;
+}
+
+public void setAvaliacaoVacina(int avaliacaoVacina) {
+	this.avaliacaoVacina = avaliacaoVacina;
 }
 
 		

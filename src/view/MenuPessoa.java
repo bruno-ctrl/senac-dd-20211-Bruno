@@ -55,6 +55,9 @@ public class MenuPessoa {
 		System.out.println("Digite o tipo de pessoa ((1)Pesquisadores (2)Voluntários (3)Público em Geral) :");
 		pessoaVO.setTipoPessoa(Integer.parseInt(teclado.nextLine()));
 		
+		System.out.println("Digite o nivel de Satisfação com a vacina :");
+		pessoaVO.setAvaliacaoVacina(Integer.parseInt(teclado.nextLine()));
+		
 		ControladoraPessoa controladoraPessoa = new ControladoraPessoa();
 		String informacao = controladoraPessoa.cadastrarPessoas(pessoaVO);
 		System.out.println(informacao);
